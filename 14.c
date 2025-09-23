@@ -6,11 +6,11 @@ int main() {
     printf("Digite um numero inteiro: ");
     scanf("%d", &valor);
 
-    if (valor < 0) {
-        valor = valor * -1; // Inverte o sinal
+    if (valor % 2 == 0) {
+        printf("O numero %d e par.\n", valor);
+    } else {
+        printf("O numero %d e impar.\n", valor);
     }
-
-    printf("O valor final eh: %d\n", valor);
 
     return 0;
 }
